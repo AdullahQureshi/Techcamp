@@ -11,7 +11,7 @@ const fileUpload= require('express-fileupload')
 const helmet = require('helmet')
 const sanitize = require('express-mongo-sanitize')
 const xss = require('xss-clean')
-
+const rateLimit = require('express-rate-limit')
 
 // Router file
 const bootcamps = require('./Routes/Bootcamps')
@@ -30,6 +30,7 @@ app.use(cookieParser())
 app.use(helmet())
 app.use(sanitize())
 app.use(xss())
+app.use(rateLimit())
 
 // app.use(logger)
 // Mount router
