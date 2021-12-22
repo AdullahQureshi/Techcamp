@@ -1,0 +1,17 @@
+{
+  "name": "devcamperbackend",
+  "version": "1.0.0",
+  "description": "devcamper",
+  "main": "server.js",
+  "scripts": {
+    "start": "NODE_ENV==production node server",
+    "dev" : "nodemon server"
+  },
+  "author": "Ch Omer",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.15"
+  }
+}
