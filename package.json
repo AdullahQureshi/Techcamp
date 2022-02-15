@@ -7,7 +7,7 @@
     "start": "NODE_ENV==production node server",
     "dev": "nodemon server"
   },
-  "author": "Ch Omer",
+  "author": "Abdullah Qureshi",
   "license": "MIT",
   "dependencies": {
     "bcrypt": "^5.0.1",
